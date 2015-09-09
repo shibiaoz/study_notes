@@ -27,3 +27,38 @@ body {
     height:$height;
 }
 ```
+
+> sass 机遇ruby，如果已经已经安装过ruby，`gem install sass`安装即可
+
+```
+gem update sass
+gem uninstall sass
+```
+> 如果没有翻墙，如何安装sass，利用taobao镜像安装
+
+-  gem sources --remove https://rubygems.org/
+-  gem sources -a https://ruby.taobao.org/
+-  gem sources -l
+-  gem install rails
+
+
+> 编译(watch之后动态编译)
+
+-  sass --watch test.scss test.css
+- sass --watch test.scss:test.css --style nested `大括号和最后一行代码一行`
+- sas --watch test.scss:test.css --style   expanded `大括号另起一行`
+
+
+> 常见的编译错误
+
+- 只支持utf8编码
+- 路径中文
+
+
+> 自动化编译
+
+
+
+
+
+
